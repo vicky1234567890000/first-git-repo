@@ -8,7 +8,7 @@ public class App {
 
 		HashMap<Student,String> map = new HashMap<>();
 		Student student = new Student("abhilash");
-		map.put(student, "india");
+		map.put(student, "England");
 		System.out.println(map.get(student));
 		System.out.println(map.get(student));
 		System.out.println(map.get(student));
