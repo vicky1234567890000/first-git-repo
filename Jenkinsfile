@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Testing docker compose') {
+        stage('Testing docker-compose') {
             steps{
                 sh 'docker --version'
                 sh 'docker-compose --version'
