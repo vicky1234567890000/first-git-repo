@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Testing docker tooling') {
+        stage('Testing docker') {
             steps{
                 sh 'docker --version'
                 sh 'docker-compose --version'
@@ -22,5 +22,11 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+          sh 'docker-compose down --remove-orphans -v'
+          sh 'docker-compose ps'
+        }
+      }
 
  }
