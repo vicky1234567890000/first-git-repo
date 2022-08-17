@@ -6,8 +6,7 @@ pipeline {
             steps{
                 sh 'docker --version'
                 sh 'docker-compose --version'
-                sh 'curl --version'
-            }
+                }
         }
 
         stage('Prune Docker data') {

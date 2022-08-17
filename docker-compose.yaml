@@ -1,11 +1,5 @@
 version: '3'
 services:
-  echo-server:
-    image: ealen/echo-server:latest
-    environment:
-      - ENABLE__ENVIRONMENT=false
-    ports:
-      - 3000:80
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.2.1
